@@ -5,11 +5,13 @@ import Home from './components/Home';
 import QuizInstructions from './components/quiz/QuizInstructions';
 import Play from './components/quiz/Play';
 import QuizSummary from './components/quiz/QuizSummary';
+import  Questions from './components/database/Questions'
 
 function App() {
   return (
     <Router>
       <Route path="/" exact component={Home} />
+      <Route path="/questions" exact component={Questions} />
       <Route path="/play/instructions" exact component={QuizInstructions} />
       <Route path="/play/quiz" exact component={Play} />
       <Route path="/play/quizSummary" exact component={QuizSummary} />
