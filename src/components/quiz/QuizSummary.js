@@ -54,7 +54,7 @@ class QuizSummary extends Component {
                     <div style={{ textAlign: 'center' }}>
                         <span className="mdi mdi-check-circle-outline success-icon"></span>
                     </div>
-                    <h1>Quiz has ended</h1>
+                    <h1>Petrobowl Game Has Ended</h1>
                     <div className="container stats">
                         <h4>{remark}</h4>
                         <h2>Your Score: {this.state.score.toFixed(0)}&#37;</h2>

@@ -11,7 +11,7 @@ const QuizInstructions = () => (
     <Fragment>
         <Helmet><title>Quiz Instructions - Quiz App</title></Helmet>
         <div className="instructions container">
-            <h1>How to Play the Game</h1>
+            <h1>How to Play the Petrobowl Game</h1>
             <p>Ensure you read this guide from start to finish.</p>
             <ul className="browser-default" id="main-list">
                 <li>The game has a duration of 15 minutes and ends as soon as your time elapses.</li>
