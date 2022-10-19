@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import M from 'materialize-css';
 import classnames from 'classnames';
 
-import questions from '../../questions.json';
+import questions from '../../db.json';
 import isEmpty from '../../utils/is-empty';
 
 import correctNotification from '../../assets/audio/correct-answer.mp3';
