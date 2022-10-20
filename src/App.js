@@ -5,7 +5,7 @@ import Home from './components/Home';
 import QuizInstructions from './components/quiz/QuizInstructions';
 import Play from './components/quiz/Play';
 import QuizSummary from './components/quiz/QuizSummary';
-import  Questions from './components/database/Questions'
+import  Questions from './components/page/NewQuestion';
 
 function App() {
   return (

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Input from '../form/Input'
-import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
+import { Link } from 'react-router-dom';
 
-function ProjectForm({ handleSubmit, btnText, projectData }){
+function QuestionForm({ handleSubmit, btnText, projectData }){
     const [categories, setCategories]= useState([])
     const [project, setProject]= useState(projectData || {})
 
@@ -32,42 +32,63 @@ function ProjectForm({ handleSubmit, btnText, projectData }){
     
     }
 
-    function handleCategory(e) {
-      setProject({
-        ...project,
-        category: {
-          id: e.target.value,
-          name: e.target.options[e.target.selectedIndex].text,
-        },
-      })
-    }
-
-
     return (
         <form onSubmit={submit}>
             <Input
              type="text"
-             text="question"
+             text="Question"
              name="question"
-             placeholder="question"
+             placeholder="New Question"
              handleOnChange={handleChange}
              value={project.question ? project.question : ''}
+            />
+            <Input
+             type="text"
+             text="OptionA"
+             name="optionA"
+             placeholder="Option A"
+             handleOnChange={handleChange}
+             value={project.optionA ? project.optionA : ''}
+            />
+            <Input
+             type="text"
+             text="OptionB"
+             name="optionB"
+             placeholder="Option B"
+             handleOnChange={handleChange}
+             value={project.optionB ? project.optionB : ''}
+            />
+            <Input
+             type="text"
+             text="OptionC"
+             name="optionC"
+             placeholder="Option C"
+             handleOnChange={handleChange}
+             value={project.optionC ? project.optionC : ''}
+            />
+            <Input
+             type="text"
+             text="OptionD"
+             name="optionD"
+             placeholder="Option D"
+             handleOnChange={handleChange}
+             value={project.optionD ? project.optionD : ''}
             />
 
             <Input
              type="text"
-             text="Nome do Projeto"
-             name="name"
-             placeholder="Insira o Nome do Projeto"
+             text="Answer"
+             name="answer"
+             placeholder="Answer"
              handleOnChange={handleChange}
-             value={project.name ? project.name : ''}
+             value={project.answer ? project.answer : ''}
             />
             
-
-
-            
             <SubmitButton text={btnText}/>
+            <li>
+              <Link to ="/">Back to Home</Link>
+            </li>
         </form>
     )
 }
-export default ProjectForm
+export default QuestionForm
