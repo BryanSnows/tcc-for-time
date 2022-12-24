@@ -46,45 +46,6 @@
       "id": 5
     },
     {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
-    },
-    {
       "question": "jander é ",
       "optionA": "sim",
       "optionB": "eu acho",
@@ -92,6 +53,24 @@
       "optionD": "com certeza",
       "answer": "sim",
       "id": 19
+    },
+    {
+      "question": "petroleo é ",
+      "optionA": "sal",
+      "optionB": "maneiga",
+      "optionC": "perdao",
+      "optionD": "hidrocarboneto",
+      "answer": "hidrocarboneto",
+      "id": 20
+    },
+    {
+      "question": "o oleo é ",
+      "optionA": "oleo",
+      "optionB": "sal",
+      "optionC": "agua",
+      "optionD": "pipi",
+      "answer": "oleo",
+      "id": 21
     }
   ]
 }
